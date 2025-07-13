@@ -1,0 +1,134 @@
+/* FONDO Y ESTRUCTURA */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-image: url('fondo.jpg'); /* fondo con imagen como el tuyo */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  margin: 0;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #3e2723;
+  backdrop-filter: brightness(0.93); /* para mejorar legibilidad */
+}
+
+/* FOTO DE PERFIL */
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border: 3px solid white;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* NOMBRE */
+h1 {
+  margin: 0;
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 0.6rem 1.2rem;
+  border-radius: 12px;
+  color: #3e2723;
+}
+
+/* DESCRIPCIÓN */
+.descripcion {
+  font-weight: 300;
+  font-size: 1.1rem;
+  margin-top: 0.3rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: #5e4336;
+}
+
+/* CONTENEDOR DE LINKS */
+.link-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  width: 100%;
+  max-width: 320px;
+  margin-top: 1rem;
+}
+
+.link-container a {
+  text-decoration: none;
+  background-color: #a1887f; /* marrón claro */
+  color: #fff;
+  padding: 1rem;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.link-container a:hover {
+  background-color: #8d6e63;
+  transform: translateY(-2px);
+}
+
+/* ÍCONOS DE REDES SOCIALES */
+.social-icons {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.social-icons a {
+  opacity: 0.8;
+  transition: opacity 0.2s ease;
+}
+
+.social-icons a:hover {
+  opacity: 1;
+}
+
+.social-icons img {
+  width: 28px;
+  height: 28px;
+}
+
+/* FOOTER (opcional, si lo querés agregar después) */
+footer {
+  margin-top: 3rem;
+  font-size: 0.9rem;
+  color: #7c5f53;
+  text-align: center;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  body {
+    padding: 1rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .link-container a {
+    font-size: 1rem;
+    padding: 0.9rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  .link-container a {
+    font-size: 1.2rem;
+  }
+}
